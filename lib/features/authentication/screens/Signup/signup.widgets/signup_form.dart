@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:utmstore/features/authentication/screens/Signup/signup.widgets/verify_email.dart';
 import 'package:utmstore/utils/helpers/helper_functions.dart';
 
 import '../../../../../utils/constant/colors.dart';
 import '../../../../../utils/constant/sizes.dart';
 import '../../../../../utils/constant/text_strings.dart' show TTexts;
+
 class TSignupForm extends StatelessWidget {
   const TSignupForm({
     super.key,
-
   });
-
-
 
   @override
   Widget build(BuildContext context) {
-    final dark= THelperFunctions.isDarkMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return Form(
       child: Column(
         children: [
@@ -105,7 +105,6 @@ class TSignupForm extends StatelessWidget {
                   height: 24,
                   child: Checkbox(value: true, onChanged: (value) {})),
               const SizedBox(width: TSizes.spaceBtwItems),
-
               Text.rich(
                 TextSpan(children: [
                   TextSpan(
@@ -113,25 +112,17 @@ class TSignupForm extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodySmall),
                   TextSpan(
                       text: '${TTexts.privacyPolicy} ',
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyMedium!
-                          .apply(
-                        color:
-                        dark ? TColors.white : TColors.primary,
-                      )),
+                      style: Theme.of(context).textTheme.bodyMedium!.apply(
+                            color: dark ? TColors.white : TColors.primary,
+                          )),
                   TextSpan(
                       text: '${TTexts.and} ',
                       style: Theme.of(context).textTheme.bodySmall),
                   TextSpan(
                       text: '${TTexts.termsOfUse} ',
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyMedium!
-                          .apply(
-                        color:
-                        dark ? TColors.white : TColors.primary,
-                      )),
+                      style: Theme.of(context).textTheme.bodyMedium!.apply(
+                            color: dark ? TColors.white : TColors.primary,
+                          )),
                 ]),
               ),
             ],
@@ -139,7 +130,12 @@ class TSignupForm extends StatelessWidget {
           const SizedBox(height: TSizes.spaceBtwItems),
 
           ///Signup Button
-          SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: Text(TTexts.createAccount)),),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+                onPressed: () => Get.to(() => const VerifyEmailScreen()),
+                child: Text(TTexts.createAccount)),
+          ),
         ],
       ),
     );

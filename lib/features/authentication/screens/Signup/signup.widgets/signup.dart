@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:utmstore/app.dart';
-import 'package:utmstore/common/widgets.login_signup/form_divider.dart';
-import 'package:utmstore/common/widgets.login_signup/social_buttons.dart';
+import 'package:utmstore/common/widgets/login_signup/form_divider.dart';
+import 'package:utmstore/common/widgets/login_signup/social_buttons.dart';
 import 'package:utmstore/features/authentication/screens/Signup/signup.widgets/signup_form.dart';
 import 'package:utmstore/utils/constant/colors.dart';
 import 'package:utmstore/utils/constant/enums.dart';
