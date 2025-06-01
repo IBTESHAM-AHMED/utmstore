@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:utmstore/features/authentication/controllers.onboarding/onboarding_controller.dart';
+// import 'package:utmstore/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:utmstore/features/authentication/screens/OnBoarding/widgets/onboarding_next_button.dart';
 import 'package:utmstore/features/authentication/screens/OnBoarding/widgets/onboarding_page.dart';
 import 'package:utmstore/features/authentication/screens/OnBoarding/widgets/onboarding_skip.dart';
 import 'package:utmstore/utils/constant/text_strings.dart';
+import '../../controllers/onboarding_controller.dart';
 import 'widgets/onboarding_dot_navigation.dart';
 import 'package:utmstore/utils/constant/image_strings.dart';
 import 'package:get/get.dart';
