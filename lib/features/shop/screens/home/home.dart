@@ -18,7 +18,9 @@ class HomeScreen extends StatelessWidget {
               child: Stack(
                 children: [
                   // First circular container
-                  TCircularContainer(backgroundColor: TColors.textWhite.withOpacity(0.1),),
+                  Positioned(top: -150,right:-250,child: TCircularContainer(backgroundColor: TColors.textWhite,)),
+                  Positioned(top: 100,right:-300,child: TCircularContainer(backgroundColor: TColors.textWhite.withOpacity(0.1),)),
+
                   // Second circular container
                 ],
               ),
