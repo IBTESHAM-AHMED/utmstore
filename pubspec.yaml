@@ -38,13 +38,13 @@ dev_dependencies:
 flutter_native_splash:
     color: "#FFFFFF"
     color_dark: "#000000"
-    image: assets/logos/t-store-splash-logo-black.png
-    image_dark: assets/logos/t-store-splash-logo-white.png
+    image: assets/logos/utmstore-logo-black.png
+    image_dark: assets/logos/utmstore-logo-white.png
     android_12:
       color: "#FFFFFF"
       color_dark: "#000000"
-      image: assets/logos/t-store-splash-logo-black.png
-      image_dark: assets/logos/t-store-splash-logo-white.png
+      image: assets/logos/utmstore-logo-black.png
+      image_dark: assets/logos/utmstore-logo-white.png
     web: false
 flutter:
   uses-material-design: true
