@@ -17,9 +17,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             TPrimaryHeaderContainer(
-              child: Column(
-                children: [],
-              ),
+              child: Container()
             ),
           ],
         ),
